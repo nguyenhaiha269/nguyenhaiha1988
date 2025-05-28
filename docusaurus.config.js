@@ -9,7 +9,7 @@ const config = {
   title: "HaiHa's Home",
   tagline: 'Nơi chia sẻ kiến thức học tập',
   url: 'https://nguyenhaiha269.github.io',
-  baseUrl: '/nguyenhaiha1988/',
+  baseUrl: '/nguyenhaiha1988/', // Đảm bảo đây là baseUrl chính xác
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico', // Đường dẫn đến favicon
@@ -30,12 +30,12 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/nguyenhaiha269/nguyenhaiha1988/tree/main/', // Giả sử nhánh chính là main
+            'https://github.com/nguyenhaiha269/nguyenhaiha1988/tree/main/', // Kiểm tra lại tên nhánh chính (main hoặc master)
         },
         blog: {
           showReadingTime: true,
           editUrl:
-            'https://github.com/nguyenhaiha269/nguyenhaiha1988/tree/main/', // Giả sử nhánh chính là main
+            'https://github.com/nguyenhaiha269/nguyenhaiha1988/tree/main/', // Kiểm tra lại tên nhánh chính (main hoặc master)
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -50,9 +50,8 @@ const config = {
       navbar: {
         title: "HaiHa's Home",
         logo: {
-          alt: "HaiHa's Home Logo",
-          src: 'img/favicon.ico', // <<< ĐÃ THAY ĐỔI: Sử dụng favicon.ico làm logo
-          // srcDark: 'img/favicon_dark.ico', // Tùy chọn: nếu bạn có favicon riêng cho dark mode
+          alt: "HaiHa's Home Logo", // Alt text cho logo navbar
+          src: 'img/favicon.ico', // Sử dụng favicon.ico làm logo navbar
         },
         items: [
           {
@@ -70,11 +69,19 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
-        links: [
-          // ...
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} HaiHa's Home. Built with Docusaurus.`,
+        style: 'dark', // Giữ 'dark' hoặc đổi thành 'light' tùy sở thích
+        links: [], // Để trống mảng này để không có các cột link mặc định
+        copyright: `
+          <div class="footer-slogan-container">
+            <div class="footer-slogan-logo">
+              <img src="/nguyenhaiha1988/img/favicon.ico" alt="Logo nhỏ HaiHa's Home" />
+            </div>
+            <div class="footer-slogan-text">
+              <p>Sức mạnh của niềm tin là chìa khóa mở cánh cửa hạnh phúc.</p>
+            </div>
+          </div>
+          Bản quyền © ${new Date().getFullYear()} HaiHa's Home. Xây dựng với Docusaurus.
+        `.trim(), // trim() để loại bỏ khoảng trắng thừa
       },
       prism: {
         theme: lightCodeTheme,
