@@ -5,10 +5,10 @@ name: Deploy Docusaurus Site to GitHub Pages
 on:
   push:
     branches:
-      - main # Hoặc master, tùy theo tên nhánh chính của bạn (repository của bạn đang là 'master')
+      - master # Hoặc master, tùy theo tên nhánh chính của bạn (repository của bạn đang là 'master')
   pull_request:
     branches:
-      - main # Hoặc master
+      - master # Hoặc master
 
 jobs:
   deploy:
