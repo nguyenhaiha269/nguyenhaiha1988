@@ -1,30 +1,44 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+/* src/css/custom.css */
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Các biến màu mặc định khác của Docusaurus có thể vẫn ở đây */
+  --ifm-font-family-base: 'Lora', serif; /* Giữ lại font bạn đã chọn hoặc thay đổi */
+  --ifm-font-family-heading: 'Montserrat', sans-serif; /* Giữ lại font bạn đã chọn hoặc thay đổi */
+  
+  /* ---- BỘ MÀU HỒNG ---- */
+  --ifm-color-primary: #E5739D;         /* Màu hồng chủ đạo */
+  --ifm-color-primary-dark: #D85C8B;    /* Đậm hơn một chút */
+  --ifm-color-primary-darker: #C94B7C;   /* Đậm hơn nữa */
+  --ifm-color-primary-darkest: #B33B69;  /* Đậm nhất */
+  --ifm-color-primary-light: #ED8BAB;   /* Nhạt hơn một chút */
+  --ifm-color-primary-lighter: #F29AB8;  /* Nhạt hơn nữa */
+  --ifm-color-primary-lightest: #F9B4CB; /* Nhạt nhất */
+  /* ---- KẾT THÚC BỘ MÀU HỒNG ---- */
+
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Bạn có thể cần điều chỉnh màu chữ cho phù hợp với nền hồng nếu cần */
+  /* Ví dụ, nếu màu hồng của bạn rất sáng, bạn có thể muốn chữ tối hơn */
+  /* --ifm-font-color-base: #1c1e21; */
+
+  /* Màu nền trang, bạn có thể giữ trắng hoặc đổi sang một màu rất nhạt tương thích */
+  /* --ifm-background-color: #fff; */
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* CSS cho Dark Mode (nếu bạn có bật) */
+/* Bạn cũng cần chọn các sắc độ hồng phù hợp cho Dark Mode */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  /* ---- BỘ MÀU HỒNG CHO DARK MODE ---- */
+  --ifm-color-primary: #F9B4CB;         /* Màu hồng chủ đạo cho dark mode (thường là màu nhạt hơn) */
+  --ifm-color-primary-dark: #F29AB8;
+  --ifm-color-primary-darker: #ED8BAB;
+  --ifm-color-primary-darkest: #E5739D;
+  --ifm-color-primary-light: #E5739D;   /* Có thể cần điều chỉnh các sắc độ này */
+  --ifm-color-primary-lighter: #D85C8B;
+  --ifm-color-primary-lightest: #C94B7C;
+  /* ---- KẾT THÚC BỘ MÀU HỒNG CHO DARK MODE ---- */
+  
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  /* --ifm-background-color: #121212; */ /* Màu nền tối điển hình */
 }
