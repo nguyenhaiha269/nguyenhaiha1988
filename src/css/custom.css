@@ -54,13 +54,13 @@
 }
 
 .footer-slogan-logo {
-  margin-right: 15px; /* Khoảng cách giữa logo và slogan. Giảm nếu logo quá nhỏ */
+  margin-right: 26px; /* Khoảng cách giữa logo và slogan. Giảm nếu logo quá nhỏ */
   flex-shrink: 0; /* Không cho logo bị co lại */
 }
 
 .footer-slogan-logo img {
-  height: 16px; /* <<<< KÍCH THƯỚC LOGO ĐÃ GIẢM RẤT NHỎ */
-  width: 16px;  /* <<<< KÍCH THƯỚC LOGO ĐÃ GIẢM RẤT NHỎ */
+  height: 26px; /* <<<< KÍCH THƯỚC LOGO ĐÃ GIẢM RẤT NHỎ */
+  width: 26px;  /* <<<< KÍCH THƯỚC LOGO ĐÃ GIẢM RẤT NHỎ */
   vertical-align: middle;
 }
 
