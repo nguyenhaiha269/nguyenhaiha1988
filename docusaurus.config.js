@@ -6,13 +6,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "HaiHa's Home", // ĐÃ THAY ĐỔI
-  tagline: 'Nơi chia sẻ kiến thức học tập', // Giữ nguyên hoặc bạn có thể thay đổi nếu muốn
+  title: "HaiHa's Home",
+  tagline: 'Nơi chia sẻ kiến thức học tập',
   url: 'https://nguyenhaiha269.github.io',
   baseUrl: '/nguyenhaiha1988/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico', // Bạn có thể giữ nguyên hoặc thay thế file này trong thư mục static/img
+  favicon: 'img/favicon.ico', // Đường dẫn đến favicon
 
   organizationName: 'nguyenhaiha269',
   projectName: 'nguyenhaiha1988',
@@ -48,17 +48,18 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "HaiHa's Home", // ĐÃ THAY ĐỔI
+        title: "HaiHa's Home",
         logo: {
-          alt: "HaiHa's Home Logo", // THAY ĐỔI alt text cho phù hợp
-          src: 'img/logo.svg', // Bạn có thể giữ nguyên hoặc thay thế file này trong thư mục static/img
+          alt: "HaiHa's Home Logo",
+          src: 'img/favicon.ico', // <<< ĐÃ THAY ĐỔI: Sử dụng favicon.ico làm logo
+          // srcDark: 'img/favicon_dark.ico', // Tùy chọn: nếu bạn có favicon riêng cho dark mode
         },
         items: [
           {
             type: 'doc',
-            docId: 'intro', // File tài liệu đầu tiên
+            docId: 'intro',
             position: 'left',
-            label: 'Hướng Dẫn', // Tên hiển thị cho mục tài liệu
+            label: 'Hướng Dẫn',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -71,28 +72,9 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          // Bạn có thể tùy chỉnh các link ở footer này sau
-          // Ví dụ:
-          // {
-          //   title: 'Tài liệu',
-          //   items: [
-          //     {
-          //       label: 'Hướng dẫn',
-          //       to: '/docs/intro',
-          //     },
-          //   ],
-          // },
-          // {
-          //   title: 'Cộng đồng',
-          //   items: [
-          //     {
-          //       label: 'Discord',
-          //       href: '#', // Thay link Discord của bạn
-          //     },
-          //   ],
-          // },
+          // ...
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} HaiHa's Home. Built with Docusaurus.`, // ĐÃ THAY ĐỔI
+        copyright: `Copyright © ${new Date().getFullYear()} HaiHa's Home. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
