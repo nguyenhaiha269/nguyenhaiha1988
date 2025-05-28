@@ -18,7 +18,6 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            {/* ĐÃ THAY ĐỔI NỘI DUNG NÚT BẤM Ở ĐÂY */}
             “Bạn trở thành điều mà bạn tin tưởng. Bạn đang ở đâu hôm nay trong cuộc đời mình là dựa trên tất cả những gì mà bạn đã từng tin.”
           </Link>
         </div>
@@ -31,8 +30,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Chào mừng đến ${siteConfig.title}`} {/* Bạn có thể thay đổi tiêu đề tab ở đây nếu muốn */}
-      description="Nơi chia sẻ kiến thức và niềm tin vào bản thân. Khám phá những điều bạn có thể đạt được."> {/* Thay đổi mô tả cho phù hợp */}
+      title={`Chào mừng đến ${siteConfig.title}`}
+      description="Nơi chia sẻ kiến thức và niềm tin vào bản thân. Khám phá những điều bạn có thể đạt được.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
