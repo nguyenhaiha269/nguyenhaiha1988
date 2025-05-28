@@ -42,3 +42,51 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   /* --ifm-background-color: #121212; */ /* Màu nền tối điển hình */
 }
+
+/* ----- CSS CHO FOOTER SLOGAN CONTAINER ----- */
+.footer-slogan-container {
+  display: flex;
+  align-items: center; /* Căn giữa các item theo chiều dọc */
+  justify-content: center; /* Căn giữa container nếu nội dung không chiếm hết chiều rộng */
+  flex-wrap: wrap; /* Cho phép xuống dòng trên màn hình nhỏ */
+  margin-bottom: 20px; /* Khoảng cách với dòng copyright */
+  padding: 0 15px; /* Thêm chút padding hai bên */
+}
+
+.footer-slogan-logo {
+  margin-right: 15px; /* Khoảng cách giữa logo và slogan. Giảm nếu logo quá nhỏ */
+  flex-shrink: 0; /* Không cho logo bị co lại */
+}
+
+.footer-slogan-logo img {
+  height: 16px; /* <<<< KÍCH THƯỚC LOGO ĐÃ GIẢM RẤT NHỎ */
+  width: 16px;  /* <<<< KÍCH THƯỚC LOGO ĐÃ GIẢM RẤT NHỎ */
+  vertical-align: middle;
+}
+
+.footer-slogan-text {
+  flex-grow: 1; /* Cho phép slogan chiếm không gian còn lại */
+  text-align: left; /* Căn trái cho slogan */
+  min-width: 150px; /* Điều chỉnh nếu cần cho slogan */
+}
+
+.footer-slogan-text p {
+  margin: 0; /* Bỏ margin mặc định của thẻ p */
+  font-style: italic;
+  font-size: 0.9em; /* Kích thước chữ cho slogan, có thể giảm nếu logo quá nhỏ */
+}
+
+/* Điều chỉnh cho màn hình nhỏ nếu cần */
+@media (max-width: 600px) {
+  .footer-slogan-container {
+    flex-direction: column; /* Xếp chồng logo và slogan trên màn hình rất nhỏ */
+    text-align: center; /* Căn giữa text khi xếp chồng */
+  }
+  .footer-slogan-logo {
+    margin-right: 0;
+    margin-bottom: 8px; /* Khoảng cách giữa logo và slogan khi xếp chồng */
+  }
+  .footer-slogan-text {
+    text-align: center; /* Căn giữa slogan khi xếp chồng */
+  }
+}
