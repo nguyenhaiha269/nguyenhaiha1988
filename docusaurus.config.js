@@ -6,25 +6,20 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  title: 'Trang Web Của Ha', // THAY ĐỔI
+  tagline: 'Nơi chia sẻ kiến thức học tập', // THAY ĐỔI
+  url: 'https://nguyenhaiha269.github.io', // THAY ĐỔI
+  baseUrl: '/nguyenhaiha1988/', // THAY ĐỔI
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.ico', // Bạn có thể giữ nguyên hoặc thay thế file này trong thư mục static/img
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'nguyenhaiha269', // THAY ĐỔI
+  projectName: 'nguyenhaiha1988', // THAY ĐỔI
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'vi', // THAY ĐỔI
+    locales: ['vi'], // THAY ĐỔI
   },
 
   presets: [
@@ -34,17 +29,13 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/nguyenhaiha269/nguyenhaiha1988/tree/main/', // THAY ĐỔI
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/nguyenhaiha269/nguyenhaiha1988/tree/main/', // THAY ĐỔI
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -57,21 +48,21 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Trang Web Của Ha', // THAY ĐỔI
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.svg', // Bạn có thể giữ nguyên hoặc thay thế file này trong thư mục static/img
         },
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'intro', // File tài liệu đầu tiên
             position: 'left',
-            label: 'Tutorial',
+            label: 'Hướng Dẫn', // Tên hiển thị cho mục tài liệu
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/nguyenhaiha269/nguyenhaiha1988', // THAY ĐỔI
             label: 'GitHub',
             position: 'right',
           },
@@ -80,47 +71,10 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
+          // Bạn có thể tùy chỉnh các link ở footer này sau
+          // ... (giữ nguyên hoặc tùy chỉnh phần links)
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} nguyenhaiha269. Built with Docusaurus.`, // THAY ĐỔI
       },
       prism: {
         theme: lightCodeTheme,
