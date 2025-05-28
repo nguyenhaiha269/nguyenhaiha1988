@@ -5,16 +5,20 @@ name: Deploy Docusaurus Site to GitHub Pages
 on:
   push:
     branches:
-      - master # Hoặc master, tùy theo tên nhánh chính của bạn (repository của bạn đang là 'master')
+      - master # Hoặc main, tùy theo tên nhánh chính của bạn
   pull_request:
     branches:
-      - master # Hoặc master
+      - master # Hoặc main
 
 jobs:
   deploy:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
-    permissions:
+    # Thêm phần environment vào đây
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions: # Phần permissions vẫn giữ nguyên
       contents: read
       pages: write
       id-token: write
@@ -27,7 +31,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18' # Bạn có thể dùng phiên bản Node.js LTS mới hơn
+          node-version: '18'
           cache: 'npm'
 
       - name: Install dependencies
@@ -45,5 +49,5 @@ jobs:
           path: ./build
 
       - name: Deploy to GitHub Pages
-        id: deployment
+        id: deployment # Bước này quan trọng để lấy page_url
         uses: actions/deploy-pages@v4
