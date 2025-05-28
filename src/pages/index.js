@@ -12,7 +12,8 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
+        {/* ĐÃ THAY ĐỔI TIÊU ĐỀ CHÍNH Ở ĐÂY */}
+        <h1 className="hero__title">HaiHa's Home</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
@@ -30,7 +31,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Chào mừng đến ${siteConfig.title}`}
+      // ĐÃ THAY ĐỔI TIÊU ĐỀ TAB VÀ THAM CHIẾU siteConfig.title Ở ĐÂY
+      title={`Trang chủ HaiHa's Home`}
       description="Nơi chia sẻ kiến thức và niềm tin vào bản thân. Khám phá những điều bạn có thể đạt được.">
       <HomepageHeader />
       <main>

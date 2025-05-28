@@ -6,20 +6,20 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Trang Web Của Ha', // THAY ĐỔI
-  tagline: 'Nơi chia sẻ kiến thức học tập', // THAY ĐỔI
-  url: 'https://nguyenhaiha269.github.io', // THAY ĐỔI
-  baseUrl: '/nguyenhaiha1988/', // THAY ĐỔI
+  title: "HaiHa's Home", // ĐÃ THAY ĐỔI
+  tagline: 'Nơi chia sẻ kiến thức học tập', // Giữ nguyên hoặc bạn có thể thay đổi nếu muốn
+  url: 'https://nguyenhaiha269.github.io',
+  baseUrl: '/nguyenhaiha1988/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico', // Bạn có thể giữ nguyên hoặc thay thế file này trong thư mục static/img
 
-  organizationName: 'nguyenhaiha269', // THAY ĐỔI
-  projectName: 'nguyenhaiha1988', // THAY ĐỔI
+  organizationName: 'nguyenhaiha269',
+  projectName: 'nguyenhaiha1988',
 
   i18n: {
-    defaultLocale: 'vi', // THAY ĐỔI
-    locales: ['vi'], // THAY ĐỔI
+    defaultLocale: 'vi',
+    locales: ['vi'],
   },
 
   presets: [
@@ -30,12 +30,12 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/nguyenhaiha269/nguyenhaiha1988/tree/main/', // THAY ĐỔI
+            'https://github.com/nguyenhaiha269/nguyenhaiha1988/tree/main/', // Giả sử nhánh chính là main
         },
         blog: {
           showReadingTime: true,
           editUrl:
-            'https://github.com/nguyenhaiha269/nguyenhaiha1988/tree/main/', // THAY ĐỔI
+            'https://github.com/nguyenhaiha269/nguyenhaiha1988/tree/main/', // Giả sử nhánh chính là main
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -48,9 +48,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Trang Web Của Ha', // THAY ĐỔI
+        title: "HaiHa's Home", // ĐÃ THAY ĐỔI
         logo: {
-          alt: 'My Site Logo',
+          alt: "HaiHa's Home Logo", // THAY ĐỔI alt text cho phù hợp
           src: 'img/logo.svg', // Bạn có thể giữ nguyên hoặc thay thế file này trong thư mục static/img
         },
         items: [
@@ -62,7 +62,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/nguyenhaiha269/nguyenhaiha1988', // THAY ĐỔI
+            href: 'https://github.com/nguyenhaiha269/nguyenhaiha1988',
             label: 'GitHub',
             position: 'right',
           },
@@ -72,9 +72,27 @@ const config = {
         style: 'dark',
         links: [
           // Bạn có thể tùy chỉnh các link ở footer này sau
-          // ... (giữ nguyên hoặc tùy chỉnh phần links)
+          // Ví dụ:
+          // {
+          //   title: 'Tài liệu',
+          //   items: [
+          //     {
+          //       label: 'Hướng dẫn',
+          //       to: '/docs/intro',
+          //     },
+          //   ],
+          // },
+          // {
+          //   title: 'Cộng đồng',
+          //   items: [
+          //     {
+          //       label: 'Discord',
+          //       href: '#', // Thay link Discord của bạn
+          //     },
+          //   ],
+          // },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} nguyenhaiha269. Built with Docusaurus.`, // THAY ĐỔI
+        copyright: `Copyright © ${new Date().getFullYear()} HaiHa's Home. Built with Docusaurus.`, // ĐÃ THAY ĐỔI
       },
       prism: {
         theme: lightCodeTheme,
