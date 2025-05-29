@@ -1,26 +1,50 @@
-Obsidian cơ bản:
-    - Bài 1 Hướng dẫn xem bài và trả bài trên website và Facebook Group: "https://www.youtube.com/watch?v=ULiLb4jYfgk"
-        - Bài 2 Hướng dẫn cài đặt Obsidian trên Windows or Mac: "https://www.facebook.com/groups/219067851029823/posts/220012227602052/"
-        - Bài 3 Cách chia sẻ file nhanh với Obsidian_quickShare Plugin: "https://www.youtube.com/watch?v=OG3ZutPNDb8&fbclid=IwAR2IDYg-EVx79Cc6QTPT0kgb3NQLztHdf_jVR6k_wXKvA6YmELjnnuLOIwk"
-        - Bài 4 Lấy file được chia sẻ hoặc lưu website về: "https://www.youtube.com/watch?v=OG3ZutPNDb8"
-        - Bài 5 Link Download Extension: "https://chrome.google.com/webstore/detail/markdownload-markdown-web/pcmpcfapbekmbjjkdalcgopdkipoggdi?fbclid=IwAR0NBRCwT2aJmHdVebu6AYvDEfLng_Scv3Fj3siKDdJwj9AvtM1IH6eKFn4"
-        - Bài 6 Hướng dẫn làm việc giữa nhiều máy tính: "https://www.facebook.com/groups/219067851029823/posts/220015034268438/"
-        - Bài 7 Bắt đầu với những khái niệm ban đầu: "https://www.facebook.com/groups/219067851029823/posts/221994450737163/"
-        - Bài 8 Cách tạo một note theo ngày: "https://www.facebook.com/groups/219067851029823/posts/224577793812162/"
-        - Bài 9 Hướng dẫn dùng Canvas: "https://www.facebook.com/groups/219067851029823/posts/227692430167365/"
-        - Bài 10 Vẽ Mindmap trong Canvas (Cách 1): "https://www.facebook.com/groups/219067851029823/posts/235964019340206/"
-        - Bài 11 Vẽ Mindmap trong Canvas (Cách 2): "https://www.facebook.com/groups/219067851029823/posts/247747488161859/"
-        - Bài 12 Bài Tags và làm việc với tags: "https://www.facebook.com/groups/219067851029823/posts/227941730142435/"
-        - Bài 13 Các phương pháp tìm kiếm file: "https://www.facebook.com/groups/219067851029823/posts/232932222976719/"
-        - Bài 14 Hướng dẫn tìm kiếm file cơ bản: "https://www.facebook.com/groups/219067851029823/posts/227826946820580/"
-        - Bài 15 Hướng dẫn tìm kiếm file nâng cao: "https://www.facebook.com/groups/219067851029823/posts/227804093489532/"
-        - Bài 16 Chữa bài - Một số khó khăn: "https://www.facebook.com/groups/219067851029823/posts/231620186441256/"
-        - Bài 17 Một số Tip: "https://www.facebook.com/groups/219067851029823/posts/239179162352025/"
-        - Bài 18 Làm việc với các Workspace: "https://www.facebook.com/groups/219067851029823/posts/359309507005656/"
+---
+sidebar_position: 1
+id:gioi-thieu
+title: Giới Thiệu
+sidebar-label: Giới thiệu chung
+---
 
-- Properties Obsidian:
-  - Bài Tổng hợp về Properties: "Properties/tong-hop-Properties.md"
-  - Cách thêm properties: "Properties/Obsidian-cach-them-properties-vao-obsidian.md"
-  - Thêm properites vào nhiều notes: "Properties/Obsidian-Them-dong-thoi-properties vao-nhieu-file-obsidian.md"
-  - Đổi tên nhiều properties sau khi thêm như thế nào: "Properties/Obsidian-Doi-ten-nhieu-properties.md"
-- 
+# Tutorial Intro
+
+Let's discover **Docusaurus in less than 5 minutes**.
+
+## Getting Started
+
+Get started by **creating a new site**.
+
+Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+
+### What you'll need
+
+- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
+  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+
+## Generate a new site
+
+Generate a new Docusaurus site using the **classic template**.
+
+The classic template will automatically be added to your project after you run the command:
+
+```bash
+npm init docusaurus@latest my-website classic
+```
+
+You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+
+The command also installs all necessary dependencies you need to run Docusaurus.
+
+## Start your site
+
+Run the development server:
+
+```bash
+cd my-website
+npm run start
+```
+
+The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+
+The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+
+Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
