@@ -4,12 +4,13 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'D',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+          Điều đáng sợ nhất đối với mỗi người là mỗi ngày thức dậy. 
+          Và nhận ra trong cuộc sống mình không có người và điều gì để chờ đợi, cố gắng.
+       
       </>
     ),
   },
