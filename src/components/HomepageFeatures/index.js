@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'D',
+    title: 'Điều Gì làm bạn muốn nỗ lực mỗi sáng!?',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
@@ -15,22 +15,22 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Nhận Định về những điều không như ý',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Đầy ắp những việc không như ý, chúng ta chẳng thể nào né tránh.
+        Điều duy nhất có thể làm là thay đổi góc nhìn về nó <code>docs</code> directory.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Góc nhìn phát triển',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Cuộc sông không phải lúc nào cũng màu hồng.
+        Muốn thấy cầu vồng phải chấp nhận những cơn mưa.
       </>
     ),
   },
